@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>my to-do List</title>
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="#0"></a>
+        &middot;&bull; my to-do List &bull;&middot;
+    </header>
+    <div class="mainDiv">
+        <aside>
+            <hr style="height: 5px; margin-top: 15px" noshade>
+            <hr style="height: 2px" noshade>
+            <p>добавить новое действие</p>
+            <hr style="height: 2px" noshade>
+            <hr style="height: 5px" noshade>
+            <form class="newElement">
+                <p id="p-action">опишите событие</p>
+                <input class="textbox" type="text" id="action">
+                <p id="p-date">выберите дату</p>
+                <input class="calendar" type="date" id="date">
+                <p>выберите приоритет</p>
+                <input class="priority" type="range" id="priority" min="0" max="2" step="1" value="1">
+                <br>
+                <span class="namePriotity">низкий &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; средний
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; высокий</span>
+                <input class="addNewElement" type="button" id="addNewElement" value="добавить">
+            </form>
+        </aside>
+        <main>
+            <hr style="height: 5px; margin-top: 15px" noshade>
+            <hr style="height: 2px" noshade>
+            <p>показывать:
+                <select id="sortType">
+                    <option value="0">все записи</option>
+                    <option value="1">только невыполненные</option>
+                </select>
+            </p>
+            <hr style="height: 2px" noshade>
+            <hr style="height: 5px" noshade>
+            <div id="dataDiv"></div>
+        </main>
+    </div>
+    <footer>
+        my to-do list | 2019<br>
+        &copy; polinakhaorchanka
+    </footer>
+</div>
+<script type='text/javascript' src='script/script.js'></script>
+</body>
+</html>
